@@ -16,9 +16,19 @@ A portfolio-ready full-stack application that compares a text-based PDF resume w
 
 ## Requirements
 
-- Node.js 20 or newer recommended
-- npm
-- MongoDB local instance or MongoDB Atlas connection string
+Before running the AI Resume Analyzer, ensure the following software is installed:
+
+- **Node.js:** Version 20 or newer recommended.
+- **npm:** Node Package Manager, included with Node.js.
+- **MongoDB:** A local MongoDB instance or a MongoDB Atlas connection string.
+
+### Optional tools
+- **Git:** To clone the repository and manage source code.
+- **Visual Studio Code:** Recommended code editor.
+
+### Environment Configuration
+
+Create a `.env` file inside the `server` directory and configure the following variables:
 
 ## Run locally
 
