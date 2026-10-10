@@ -8,9 +8,9 @@ A portfolio-ready full-stack application that compares a text-based PDF resume w
 
 - User registration and sign-in (bcrypt password hashes, JWT authentication)
 - PDF upload and text extraction (5 MB maximum; uploaded bytes are processed in memory, not stored as files)
-- Resume-vs-job skill coverage score and matched/missing skill lists
+- Resume-vs-Job skill coverage score and matched and missing skill lists
 - Practical resume suggestions
-- MongoDB analysis history, view, and delete
+- MongoDB analysis the history, view, and delete
 - Per-user authorization, request validation, basic rate limiting, Helmet security headers
 - Responsive React interface
 
@@ -28,7 +28,6 @@ A portfolio-ready full-stack application that compares a text-based PDF resume w
 
    ```bash
    npm install
-   npm run install:all
    ```
 
 4. Start both apps in development mode:
@@ -54,9 +53,9 @@ For a production frontend URL, change `CLIENT_URL`. If deploying the API separat
 
 ## How to use
 
-1. Register with your name, email, and a password of at least 8 characters.
-2. Upload a text-based PDF resume (scanned-image PDFs may not contain extractable text).
-3. Enter the target role and paste a job description of at least 30 characters.
+1. Register with your name, email, and a strong password of at least 8 characters.
+2. Upload a text-based PDF resume ((5 MB maximum; uploaded bytes are processed in memory, not stored as files).
+3. Enter the target role and paste a job description and required skills of at least 30 characters.
 4. Select **Analyze my resume**. Review the percentage, matching skills, missing skills, and suggestions.
 5. Open **Analysis history** to revisit or delete saved results.
 
@@ -138,8 +137,10 @@ The backend analyzer tests use Node's built-in test runner. The frontend include
 - Add integration tests and CI with GitHub Actions.
 - Deploy frontend and API separately and use MongoDB Atlas.
 
-## Resume bullet example
-
-Use only after you have run and understood the project; adapt to your actual work:
+ ## Conclusion 
+**AI Resume Analyzer | MERN Stack Project**
+- Developed a full-stack resume analysis web application using React.js, Node.js, Express.js, and MongoDB to compare resume skills and      keywords against job requirements.
+- Implemented user authentication, resume analysis, and analysis history to help users identify relevant skills and potential gaps.
+- Built a rule-based keyword-matching system to evaluate resume relevance against job descriptions and display analysis results.
 
 > Built a MERN-stack resume analysis web app with JWT authentication, PDF text extraction, MongoDB-backed analysis history, and rule-based resume-to-job skill matching with actionable feedback.
